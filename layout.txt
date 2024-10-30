@@ -1,0 +1,30 @@
+import kivy
+from kivy.app import App
+from kivy.uix.label import Label
+from kivy.uix.button import Button
+from kivy.uix.widget import Widget
+
+
+class MyApp(App):
+    def build(self):
+        wdg = Widget()  # tidak responsive widget == div
+        lbl = Label(text='Hello World')
+        lbl.pos = (200, 0)
+        btn = Button(text='MyButton')
+        wdg.add_widget(lbl)
+        wdg.add_widget(btn)
+        return wdg
+
+
+MyApp().run()
+
+
+
+
+# beberapa layout yang ada di kivy 
+# Box layout -> horizontal, vertical #responsive
+# Anchor layout -> widget dapat diposisikan dengan opsi top, bottom, left, right atau center
+# Grid layout -> widget ditempatkan dalam grid dalam bentuk baris dan kolom
+# Page layout -> digunakan untuk membuat layout multi halaman sederhana
+# Stack layout -> widget ditumpuk dalam urutan lr-tb (kiri-kanan / atas-bawah)
+# Float layout / relative layout / scatter layout -> widget ditempatkan dalam koordinat x, y, mirip dengan posisi relative/ absolute css
