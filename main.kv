@@ -1,0 +1,21 @@
+#MainWindow artinya return
+MainWindow:
+<MainWindow>:
+    orientation : 'vertical'
+    Button:
+        text: root.button_one
+        size_hint: (0.2, 0.2)
+        pos_hint: {'center_x': 0.5}
+        on_press: root.tekan_button_satu()
+    Button:
+        text: "Button2"
+        on_press: root.tekan_button_dua()
+    BoxLayout:
+        orientation: 'horizontal'
+        Label:
+            id: labelone
+            text: "Ini Label 1"
+        Label:
+            text: "Ini Label 2"
+        Label:
+            text: "Ini Label 3"
