@@ -21,8 +21,8 @@ MyApp().run()
 
 
 
-# beberapa layout yang ada di kivy 
-# Box layout -> horizontal, vertical #responsive
+# beberapa layout yang ada di kivy  <-> layout yang responsive
+# Box layout -> horizontal, vertical 
 # Anchor layout -> widget dapat diposisikan dengan opsi top, bottom, left, right atau center
 # Grid layout -> widget ditempatkan dalam grid dalam bentuk baris dan kolom
 # Page layout -> digunakan untuk membuat layout multi halaman sederhana
