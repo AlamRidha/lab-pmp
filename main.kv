@@ -10,6 +10,9 @@ MainWindow:
     Button:
         text: "Button2"
         on_press: root.tekan_button_dua()
+    Button:
+        text: "Popup"
+        on_release: root.open_popup()
     BoxLayout:
         orientation: 'horizontal'
         Label:
@@ -19,3 +22,9 @@ MainWindow:
             text: "Ini Label 2"
         Label:
             text: "Ini Label 3"
+
+<MyPopup>:
+    label: "Ini popup window"
+    Button:
+        text: "Close popup"
+        on_release: root.close_popup()

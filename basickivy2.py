@@ -1,6 +1,7 @@
 from kivy.app import App
 from kivy.lang import Builder
 from kivy.uix.boxlayout import BoxLayout
+from kivy.uix.popup import Popup
 
 
 class MainWindow(BoxLayout):
@@ -12,6 +13,20 @@ class MainWindow(BoxLayout):
     def tekan_button_dua(self):
         self.button_dua = self.ids.labelone.text
         print("Button yang ditekan berdasarkan dari label '", self.button_dua, "'")
+
+    def open_popup(self):
+        print("Popup dibuka")
+        popup = MyPopup()
+        popup.open()
+
+    pass
+
+
+# membuat pop up
+class MyPopup(Popup):
+    def close_popup(self):
+        print("Popup ditutup")
+        self.dismiss()
     pass
 
 
