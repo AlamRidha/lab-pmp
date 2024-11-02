@@ -1,0 +1,22 @@
+<MainScreen>:
+    PageOne:
+    PageTwo:
+
+<PageOne>:
+    name : "pageone"
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "ini page one"
+        Button:
+            text: "Open Page Two"
+            on_release: root.changescreen()
+<PageTwo>:
+    name : "pagetwo"
+    BoxLayout:
+        orientation: "vertical"
+        Label:
+            text: "ini page two"
+        Button:
+            text: "Open Page One"
+            on_release: root.manager.current = "pageone"
